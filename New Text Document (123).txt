@@ -1,0 +1,1227 @@
+Article
+ Energy–speed relationship of quantum 
+particles challenges Bohmian mechanics
+ https://doi.org/10.1038/s41586-025-09099-4
+ Received: 5 June 2024
+ Accepted: 6 May 2025
+ Published online: 2 July 2025
+ Open access
+ Check for updates
+ Violetta Sharoglazova1, Marius Puplauskis1, Charlie Mattschas1, Chris Toebes1 & Jan Klaers1 ✉
+ Classical mechanics characterizes the kinetic energy of a particle, the energy it holds 
+due to its motion, as consistently positive. By contrast, quantum mechanics describes 
+the motion of particles using wave functions, in which regions of negative local kinetic 
+energy can emerge1. This phenomenon occurs when the amplitude of the wave 
+function experiences notable decay, typically associated with quantum tunnelling. 
+Here, we investigate the quantum mechanical motion of particles in a system of two 
+coupled waveguides, in which the population transfer between the waveguides acts  
+as a clock, allowing particle speeds along the waveguide axis to be determined.  
+By applying this scheme to exponentially decaying quantum states at a reflective 
+potential step, we determine an energy–speed relationship for particles with negative 
+local kinetic energy. We find that the smaller the energy of the particles—in other words, 
+the more negative the local kinetic energy—the higher the measured speed inside the 
+potential step. Our findings contribute to the ongoing tunnelling time debate2–6 and 
+can be viewed as a test of Bohmian trajectories in quantum mechanics7–9. Regarding  
+the latter, we find that the measured energy–speed relationship does not align with the 
+particle dynamics postulated by the guiding equation in Bohmian mechanics.
+ Quantum particles can be found in regions in which classical particles 
+are not allowed to exist. An example of this is evanescent (exponentially 
+decaying) quantum states at potential barriers and steps. When a 
+stream of particles encounters a potential step that is reflective from 
+a classical viewpoint, there is a non-vanishing probability of finding 
+particles within the potential step. This intriguing behaviour arises 
+ψ
+ −1 2
+ from the ability of quantum mechanical states and their associated 
+wave functions ψ(x) to generate domains of negative kinetic energy1, 
+where 
+
+ x p x
+ ( ) ( )/2 <0
+ ψ m
+ . Here, 
+ p and m denote the momentum  
+oper ator and mass, respectively, and ψ(x) is considered an energy 
+eigenstate. This ability enables quantum particles to migrate into 
+regions considered energetically forbidden in classical terms while 
+maintaining energy conservation. Although this is well known, the 
+kinematic interpretation of these states raises questions that have not 
+yet been conclusively answered. This includes questions about whether 
+a speed can be assigned to these states of motion, and if so, how it 
+depends on energy.
+ The kinematic interpretation of classically forbidden states of motion 
+is intrinsically linked to the longstanding problem of tunnelling times. 
+This problem refers to the question of how long a particle needs to 
+tunnel through a (finite) potential barrier2–6. Despite the controversy 
+surrounding this topic, important insights, methodologies10–18 and 
+experiments19–27 have emerged from this debate. Investigating energy
+speed relationships in evanescent phenomena can contribute to the 
+discussion by offering a complementary perspective on this problem. 
+Speed measurements in quantum mechanics can also serve as tests 
+for the Bohmian interpretation of quantum mechanics, in which par
+ticle velocities play a very prominent part7,28–30. Apart from the 
+Schrödinger equation, a guiding equation is assumed that assigns a 
+velocity field vS
+ (x, t) to a wave function 
+using
+ t
+ v x x
+ S
+ ( , )= ∇ ( , ).
+ ħ
+ m S t
+ x x x
+ ψ t n t S t
+ ( , )= ( , )exp(i ( , )) 
+(1)
+ Here, the real-valued functions n(x, t) and S(x, t) describe the parti
+cle density and phase of the wave function, respectively. The veloc
+ity field vS
+ (x, t) gives rise to trajectories along which the particles are 
+expected to move. If the initial particle positions of these trajectories 
+are chosen according to the Born rule (quantum equilibrium hypoth
+esis), the resulting probability density aligns with the predictions of 
+standard quantum mechanics. Whether this implies that both theo
+ries generally make identical predictions remains a matter of debate. 
+Discrepancies are sought, for example, in temporal quantities such 
+as tunnelling or arrival times31–34. Although measurement results in 
+standard quantum mechanics are considered inherently random, the 
+existence of Bohmian mechanics—a fully deterministic dynamical  
+system—demonstrates that quantum phenomena do not necessarily 
+rely on randomness at their core. These sharply divergent views on the 
+fundamental processes of nature motivate the search for experimental 
+tests to distinguish between the two theories.
+ In our experiments, we investigate states of motion that arise when a 
+particle is reflected from a potential step. Standard quantum mechan
+ics does not incorporate particle velocities into its formalism in the 
+same explicit way as Bohmian mechanics. Moreover, conventional 
+measures of motion—such as group or phase velocity—do not yield 
+physically meaningful results in this scenario. To measure particle 
+speeds associated with these states, we compare translational motion 
+1Adaptive Quantum Optics, MESA+ Institute of Nanotechnology, University of Twente, Enschede, The Netherlands. ✉e-mail: j.klaers@utwente.nl
+ Nature | Vol 643 | 3 July 2025 | 67
+Article
+ Height (nm)
+ a
+ z
+ b
+ Laser
+ Camera
+ Dichroic
+ mirror
+ Objective
+ c
+ 15
+ 10
+ 5
+ 0–900–800–700–600–500–400–300–200–100
+ x (μm)
+ 0
+ 100
+ 200
+ 300
+ y
+ z x
+ m
+ a
+ 400
+ 500
+ 600
+ 700
+ 12
+ Max
+ Δ
+ > hJ0
+ 
+Δ
+ |   | < hJ0
+ Δ
+ < –hJ0
+ Microcavity
+ y
+ |m,a
+ |2
+ 10
+ Height (nm)
+ 8
+ 6
+ 4
+ 2
+ J0
+ m
+ a
+ y x
+ 0
+ z x
+ 200
+ 400
+ x (μm)
+ Fig. 1 | Experimental setup for measuring the speed of particles. a, Schematic 
+of the experimental setup. The microcavity consists of two planar mirrors, one 
+of which is nanostructured, with an optically active dye in between. The optical 
+medium can be non-resonantly pumped to induce a lasing process, generating 
+microcavity photons at the point of pumping. A small amount of the light 
+circulating in the microcavity is transmitted through the mirrors and can be 
+imaged onto a camera. b, Height map and cross-sections (see colour coding)  
+of the nanostructured mirror. The height profile of the nanostructured mirror 
+effectively induces a potential energy landscape that confines and guides the 
+photons in the transverse plane of the resonator. Specifically, the light is guided 
+in a waveguiding potential from x = −900 μm to the end of the structure at 
+x = 500 μm. In the first section, from x = −900 μm to x = −600 μm, a linear ramp 
+potential is superimposed on the waveguide potential. By changing the position 
+600
+ Min
+ 0
+ 20
+ 0
+ y (μm)
+ 20
+ 20
+ 15
+ 10
+ 5
+ 0
+ Height (nm)
+ of the non-resonant optical pumping along the ramp with a spatial light 
+modulator (SLM), we can set the initial potential energy of photons. At x = 0,  
+a step potential of height V0
+ = (0.538 ± 0.003) meV is superimposed on the 
+waveguide that runs from x = 0 μm to x = 500 μm. Apart from the main waveguide 
+described above (red cross-section), an auxiliary waveguide (green cross-section) 
+is introduced at the start of the step potential at x = 0. This effectively creates  
+a double-well potential in the direction orthogonal to the waveguide axis (grey 
+cross-section), with a coupling between the respective ground states of the wells 
+of J0
+ = 2π(6.34 ± 0.01) GHz. c, Camera images showing the photon populations in 
+the coupled waveguides for three distinct energy regimes associated with three 
+different dynamics: population oscillations in the classically allowed regime 
+Δ ħJ
+ ( > ) 0 , long-range non-oscillatory propagation Δ ħ
+ decay Δ ħ
+ ( <− )
+ J
+ J
+ 0 . Scale bar, 50 μm (b, height); 100  μm (b, length).
+ within a waveguide to population hopping between waveguides. Ini
+tially, consider a system of two degenerate localized quantum states 
+that are coupled to each other with a coupling constant J0
+ > 0. If the 
+probability amplitude is initially concentrated entirely in one of the 
+states (with a value set to 1), the population in the initially unoccupied 
+state follows sin2(J0
+ t) as a function of time t and, consequently, for 
+small times, increases as (J0
+ t)2. Provided the coupling constant is 
+known, the respective populations of the two states can be under
+stood as a measure of time. We then translate this behaviour to a sys
+tem of two coupled waveguides. Consider two parallel waveguides, 
+each capable of restricting the motion of particles to one dimension. 
+When these two waveguides are brought in proximity, tunnelling 
+processes allow particle exchange between the waveguides, which 
+can be described by a coupling constant J0
+ as introduced above. If 
+at a certain point x = 0 the entire population is concentrated in one 
+waveguide, then, sufficiently close to x = 0, the population of the 
+other waveguide is expected to grow as (J0
+ x/v)2 (replacing t with x/v). 
+Thus, provided that the coupling constant J0
+ is known, we can infer the 
+speed v by measuring the spatial population build-up in the initially 
+unoccupied state. For a more formal justification of this measurement 
+scheme, based on modelling the system using coupled Schrödinger 
+equations, we refer to the Methods and ref. 35. We emphasize that this 
+measurement scheme does not determine the direction of motion 
+of particles; thus, it is not a velocity measurement. For more details, 
+see the Methods.
+ To implement this scheme experimentally, we use a quantum-confined 
+photon gas in a planar optical microcavity36–39. In this system, the pho
+tons essentially behave like massive particles in two dimensions. More 
+specifically, the mirrors of the microcavity restrict the allowed values 
+(| |≤ ) 0 and evanescent 
+for the photon wavevector k = (kx
+ , ky
+ , kz
+ ) to those that satisfy a resonance 
+condition along the optical axis, that is kz
+ = qπ/D0
+ . Here, q = 1, 2, 3, … is 
+the longitudinal mode number and D0
+ is the spatial separation of the 
+mirrors. If the photons travel predominantly in the direction of the 
+optical axis (paraxial limit), the projection of the photon motion onto 
+the resonator plane creates a two-dimensional non-relativistic gas of 
+particles with wavevectors (kx
+ , ky
+ ). In this projection, the photons 
+acquire an effective mass m, whose value follows the energy– 
+mass equivalence 
+=
+ 0
+ ∼
+ E mc
+ ∼
+ SLM
+ 2, where E0
+ is the energy of the transverse 
+ground mode and ∼ c is the speed of light in the resonator medium36. 
+The latter follows from the photonic energy–momentum relation
+ship 
+ph
+ E ħ = c
+ ∣ ∣
+ k , which, assuming a paraxial limit 
+be approximated by E m
+ ph
+ m ħcq D E
+ = π/ = /c
+ 2
+ 0 0
+ ≈ + ( + )/2
+ c ħ k k m
+ |
+ ,
+ xy
+ ≪
+ | | |
+ k k
+ z
+ ∼
+ 2 2 2 2
+ x y
+ , can  
+, with the photon mass 
+∼ ∼ . In our experiments, we have m ≈ 6.95 × 10−36 kg. 
+In this system, the transverse motion of the photons can be precisely 
+controlled by nanostructured mirror surfaces. It can be shown39 
+that a local change in the distance between the mirrors Δd(x, y) intro
+duces a potential energy V(x, y) for the particles that follows V x y
+ ( , )= 
+∼
+ 2
+ − ( , )/
+ mc Δd x y D
+ 0. In our experiment, this effect is used to capture pho
+tons in one-dimensional waveguide potentials and to couple waveguide 
+pairs in a controlled manner. Owing to a small amount of mirror trans
+mission with a rate of γ ≈ 3.7 GHz, corresponding to a particle lifetime 
+of τ = 1/γ ≈ 270 ps, particle densities in the resonator plane can be fully 
+reconstructed by imaging the transmitted light onto a camera. This is 
+true regardless of whether the transverse state of the emitted light 
+represents evanescent or propagating solutions, allowing us to study 
+evanescent phenomena at semi-infinitely extended step potentials.
+ The core of our experimental setup, as described in Fig. 1a, consists 
+of a high-finesse microcavity with a dye medium. One of the mirrors is 
+68 | Nature | Vol 643 | 3 July 2025
+Nature | Vol 643 | 3 July 2025 | 69
+ nanostructured to create waveguiding potentials for photons in the 
+transverse plane of the resonator. The main waveguide begins with a 
+linear ramp, allowing us to vary the initial potential energy of the pho
+tons by changing the point along the ramp at which we optically pump 
+the system with a non-resonant laser pulse. The pulse duration of 26 ns 
+(full width at half maximum (FWHM)) is considerably longer than all 
+relevant time scales in the system, creating a quasi-stationary scenario 
+for all our experiments. This pumping triggers a lasing process that 
+favours the creation of photons with low kinetic energy at the position 
+of the pump, maximizing the overlap of their wave function with the 
+optical gain. The potential energy of the photons created at a certain 
+position in the ramp is then converted into kinetic energy as the pho
+tons move down and reach a region of constant potential. The photons 
+then impinge on the step potential, as shown in Fig. 1b, in which a sec
+ond waveguide opens up. We refer to this second waveguide as the 
+auxiliary waveguide in the subsequent discussion. Three examples 
+showing the photon densities in the microcavity for different pump 
+spot positions are shown in Fig. 1c. The densities are recorded by imag
+ing light transmitted through one of the mirrors onto a camera. The 
+auxiliary waveguide allows us to determine the particle speed by com
+paring the translational motion along the waveguide axis with the hop
+ping between waveguides. A prerequisite for this is determining the 
+coupling constant J0
+ between the waveguides. This can be performed 
+through a wavenumber analysis of observed mode patterns in the  
+classically allowed regime, yielding J0
+ = 2π(6.34 ± 0.01) GHz or 
+ħJ =(26.22±0.04)µeV 0
+ . For further details, see the Methods. In the 
+same way, we can also determine all other quantities of interest, such 
+as the height of the step potential V0
+ = (0.538 ± 0.003) meV and the 
+kinetic energy E of the incoming particles.
+ Figure 2a,b shows the populations |ψm,a
+ |2 in the main (ψm
+ ) and the 
+auxiliary (ψa
+ ) waveguides as a function of position x for specific values 
+of Δ E V ħJ = − + 0 0
+ , which corresponds to the kinetic energy of the par
+ticles in the step potential. For Δ ħJ > 0
+ (Fig. 2a), we observe that the 
+population oscillates between the waveguides as the particles 
+propagate in the step potential. The observed population decay over 
+several hundred micrometres is because of mirror transmission and 
+can be used to experimentally determine the photon loss rate γ intro
+duced before. For Δ ħJ <− 0
+ (Fig. 2b), evanescent types of wave functions 
+are observed for which the populations in the waveguides relax to a 
+common value. Figure 2c shows the decay constant of the population 
+in the main waveguide, denoted by κ, as a function of Δ (Methods). For 
+sufficiently large |Δ|, the measurement is in excellent agreement with 
+the expected decay constant κ mΔ ħ = 2 | |/ .
+ Figure 2d,e shows the relative population in the auxiliary waveguide 
+ρa
+ = |ψa
+ |2/(|ψm
+ |2 + |ψa
+ |2) as a function of distance to the potential step for 
+different values of Δ. Calculating the relative populations eliminates 
+common factors affecting both waveguides, such as the exponential 
+decay in the case of negative Δ. In all cases, the data are compatible 
+with a quadratic increase in relative population. By modelling our  
+data with ρa
+ = (J0
+ x/v)2, we obtain the particle speed v shown in Fig. 3a.  
+It is to be noted that, within the experimental uncertainties, v is a 
+mirror-symmetrical function of Δ. For negative Δ, this means, rather 
+counterintuitively, that the lower the energy of the particles, the faster 
+the particles move within the step potential. We emphasize that the 
+measured speed represents the local speed of particles directly behind 
+the potential step. In the coupled waveguide system, a position- 
+dependent state of motion can arise from an interplay with the coupling 
+energy, even if the potential energy remains constant. However, these 
+effects are not expected when the coupling energy is negligible, spe
+cifically when Δ ħJ | | 0 ≫ . In this limit, our data align well with v Δm = 2| |/ 
+for both negative and positive values of Δ (Fig. 3a). The residual differ
+ences are probably caused by a systematic overestimation of the speed 
+in the fitting procedure of up to 6.7% (see the Methods for details). 
+Note that for negative Δ, the speed v Δm = 2| |/ is proportional to the 
+decay constant κ mΔ ħ = 2 | |/ , following v ħκm = / . Introducing the  
+decay length λ = 1/κ, this relation can also be stated as λ ħmv = / ,  
+which represents a de Broglie relation for evanescent particle states, 
+connecting the decay length to the speed.
+ a
+ d
+ b
+ e
+ c
+ Populations (a.u.)
+ Populations (a.u.)
+ a
+ (%)
+ a
+ (%)
+ 0
+ 0
+ 0–0.35–0.30–0.25–0.20–0.15–0.10–0.05 0
+ 0
+ 0.05
+ 0.10
+ 0.15
+ 0.20
+ 0.25
+ Decay constant K (μm–1)–12–10–8–6–4–2 0
+ 15 10 10 5
+ 5
+ x (μm) x (μm)
+ x (μm) x (μm)
+ 20 40 30
+ 10
+ 15
+ 0
+ 10
+ 20
+ 30
+ 100 0 100 200 300 400 500 0 60
+ 0
+ 1,000
+ 2,000
+ 3,000
+ 4,000
+ 0
+ 200
+ 400
+ 600
+ 800
+ v ≈ 1,100 km s–1
+ v ≈ 1,200 km s–1
+ v ≈ 1,500 km s–1
+ v ≈ 2,000 km s–1
+ v ≈ 2,200 km s–1
+ v ≈ 3,400 km s–1
+ (meV) Δ
+ (hJ0) Δ
+ ≈ 0.06 meV Δ ≈ –0.03 meV Δ |m
+ |2
+ |a
+ |2
+ ≈ 0.28 meV Δ
+ ≈ 0.12 meV Δ
+ ≈ 0.06 meV Δ
+ ≈ –0.03 meV Δ
+ ≈ –0.04 meV Δ
+ ≈ –0.07 meV Δ
+ |m
+ |2
+ |a
+ |2
+ 80 40 20
+ Fig. 2 | Populations |ψm,a
+ |2 as a function of energy Δ and position x. 
+ a, Measurement example of the particle densities along the waveguide axis  
+in the main waveguide |ψm
+ |2 (blue) and auxiliary waveguide |ψa
+ |2 (green) in the 
+classically allowed parameter regime Δ ħJ ( > ) 0 . The fast periodic modulations 
+on top of the population curves stem from a residual reflection at the end of  
+the coupled waveguide system. b, Particle densities in the classically forbidden 
+regime. c, Decay constant κ of the population in the main waveguide for different 
+energies Δ (see the  Methods for further details). The observed decay constant 
+closely follows κ mΔ ħ = 2 | |/ . Error bars indicate the standard error of the mean. 
+d, Examples of measured relative populations in the auxiliary waveguide 
+ρa
+ = |ψa
+ |2/(|ψm
+ |2 + |ψa
+ |2) for classically allowed states. A parabolic fit ρa
+ = (J0
+ x/v)2 
+is used to determine the speed of the motion. e, Relative populations for 
+evanescent states in which the step is fully reflective. In these states, particles 
+enter the step potential and eventually exit it with their direction of motion 
+reversed. As in the case of the propagating states, a parabolic fit ρa
+ = (J0
+ x/v)2 
+is used to determine the speed of the motion. All data shown in this figure, 
+except those in the inset of c, are derived from single data-taking events, 
+each comprising 20 optical excitations of the system.
+70 | Nature | Vol 643 | 3 July 2025
+ Article
+ As an application of the measured energy–speed relation, we con
+sider the dwell time of particles in the step potential13. The definition 
+of the dwell time is based on the idea that, in a steady state, the storage 
+time of particles in a reservoir should be given by τdwell
+ = N/jin
+ , where N 
+is the number of stored particles and jin
+ is the incoming particle current. 
+For a fully reflecting step potential—producing a standing wave pattern 
+in front of the step and an exponentially decaying wave function within 
+it—the incoming and outgoing particle currents can be assumed to 
+have equal magnitudes but opposite directions. In analysing the exper
+iment, the incoming current is taken as jin
+ = (|ψmax
+ |2/4)vin
+ , where ψmax
+  
+is the maximum amplitude of the wave function in front of the step. 
+The factor of 4 arises from both the standing wave interference effect 
+and the division into incoming and outgoing components. Alterna
+tively, we could use the average density in front of the step along with 
+a division factor of 2. The velocity vin
+ is taken as v ħk m = / in 0 , where k0
+ 
+is determined from the periodicity of the observed standing wave 
+interference pattern. Note that this determination of jin
+ does not hold 
+in the framework of Bohmian mechanics, as will be discussed below. 
+The dwell time based on this procedure is observed to be within 1–2 ps 
+for a wide range of energies (Fig. 3b). Using the measured energy– 
+speed relation, we can give a semiclassical estimate of τdwell
+ by consid
+ering τλ
+ = λ/v, where the decay length λ corresponds to a typical travel 
+distance into and out of the step potential. The latter is derived from 
+∫ x xx x λ 2 =2 ( ) d = x>0 0
+ −1
+ 0
+ ∞ ϱ ϱ , where ϱx ( )=(e ) x λ − / 2 and ∫ x x = ( )d 0 0
+ ∞ ϱ ϱ . 
+The quantity τλ
+ is found to be close to the dwell time for a wide energy 
+range (Fig. 3b). We consider this to be further evidence for the physical 
+significance of the found energy–speed relation.
+ In further measurements, shown in Fig. 4, we interfere quantum 
+states in the step potential with their spatially mirrored images to 
+detect phase gradients (see the Methods for further details). These 
+phase gradients can then be converted into velocities following equa
+tion (1). For Δ > 0 (Fig. 4b, left), we obtain velocities that are compatible 
+with the results derived from the population transfer measurements 
+shown in Fig. 3a. For Δ < 0, the phase gradients are found to be close 
+to zero (Fig. 4b, right). If we translate the residual phase gradients into 
+velocities using equation (1), we obtain on average vS
+ = (59 ± 42) km s−1, 
+as shown in Fig. 4c, which is consistent with zero. The vanishing of vS
+ 
+indicates a vanishing net particle current, meaning that the motion 
+becomes non-directional as the step potential becomes fully reflective. 
+The Bohmian interpretation of equation (1) goes further by postulat
+ing that vS
+ is a complete characterization of the state of motion of the 
+particles. Therefore, a vanishing vS
+ not only indicates non-directionality 
+but also implies that the particles are at rest. Note that this implica
+tion is in contradiction with the conclusions drawn from our speed 
+measurements (Fig. 3a).
+ The assumption that particles in the step potential are at rest also 
+implies a fundamentally different behaviour of other quantities.  
+The dwell time, for example, can be identically defined by τdwell
+ = N/jin
+ in 
+both standard quantum mechanics and Bohmian mechanics. As the wave 
+functions are identical, the particle number N—defined as the integral of 
+the modulus of the wave function squared within the step potential—is 
+the same in both cases. However, the incoming particle current jin
+ can
+not, in general, be assumed to be identical. Scattering at a fully reflective 
+potential step—when the energy of the particle is lower than the step 
+potential—gives rise to eigenfunctions that can be chosen to be purely 
+real-valued. The corresponding absence of phase gradients indicates, 
+in the Bohmian framework, that the particles are at rest everywhere in 
+the system. In other words, there are no particle currents—specifically, 
+no incoming current into the step potential. Consequently, the ratio  
+N/jin
+ diverges, implying an infinite dwell time. Note that jin
+ = 0 is not 
+merely a consequence but also a requirement within Bohmian mechan
+ics to remain consistent with the guiding equation inside the potential 
+step, which also predicts the absence of motion—and thus an infinite 
+dwell time. Thus, the dwell time for scattering at a semi-infinite step 
+potential is an example of a physical quantity that, although identi
+cally defined and measurable in both Bohmian mechanics and standard 
+quantum mechanics, yields different values in the two theories.
+ Furthermore, an absence of particle motion in the step potential—and 
+consequently an infinite dwell time—implies that losses are essential 
+to the scattering process observed in our experiment, as every particle 
+entering the potential step would eventually be lost because of the 
+dwell time exceeding the finite lifetime of the particles of 270 ps. By 
+contrast, the wave function observed in the vicinity of the potential step 
+closely matches the wave function expected for a lossless system (see, 
+for example, Fig. 2c), thereby implying that losses are not significant in –12–10–8–6–4–2 0
+ 0
+ 0
+ 5
+ 10
+ 15
+ 20
+ Dwell time (ps)
+ b
+ 
+ dwell–15–10–5 0 5 10 15–0.4–0.3–0.2–0.1 0 0.1 0.2 0.3 0.4
+ 0
+ 1,000
+ 2,000
+ 3,000
+ 4,000
+ 5,000
+ v (km s–1)
+ a
+ Experiment
+ (meV) Δ
+ (meV) Δ
+ (hJ0) Δ
+ (hJ0) Δ–0.05–0.10–0.15–0.20–0.25–0.30–0.35
+ v = m
+ 2|  | Δ
+ V0 – |  | / (V0 |  |) h Δ Δ
+ h / (2|  |) Δ
+ Fig. 3 | Particle speed and dwell time. a, Particle speed v at the potential step 
+as a function of energy Δ. Blue markers indicate the speed values obtained from 
+the parabolic fitting of the population increase in the auxiliary waveguide.  
+The speed obtained in this way is found to be a mirror-symmetric function of 
+the energy Δ. For sufficiently large |Δ|, the data align well with v Δm = 2 / 
+(green line). For negative Δ, this means that the lower the speed of the incoming 
+particles, the faster the particles move within the step potential. The lowest 
+speed values are found in the vicinity of Δ = 0 and are close to the theoretical 
+prediction35 v ħJ m = / ≈777kms min 0
+ −1 for J0
+ = 2π × 6.34 GHz. Error bars indicate 
+the standard error of the mean. b, Dwell time as a function of energy. The dwell 
+time τdwell
+ (squares) describes how long particles are stored in the step potential 
+and can be determined using τdwell
+ = N/jin
+ , where N is the number of stored 
+particles and jin
+ is the incoming particle current. Based on the energy–speed 
+relation in a, a semiclassical estimate of τdwell
+ can be introduced using τλ
+ = λ/v, 
+where λ is the decay length (circles). This estimate is found to be in good 
+agreement with τdwell
+ for a wide range of energies. The two solid lines give the 
+expected behaviour for the dwell time and its semiclassical estimate. The given 
+formulas are derived for a single waveguide step potential. Error bars for τdwell
+ 
+indicate the standard error of the mean. Error bars for τλ
+ are derived from error 
+propagation.
+a
+ waveguides and population hopping between the waveguides. Quanti
+Camera
+ 
+ | + MeikMZI
+ x|2
+ Dove prism
+ M
+ b
+ Δ
+ ||
+ ≈ 0.10 meV
+ |M|
+ 
+ Δ
+ ||
+ ≈ –0.08 meV
+ x
+ Signal (a.u.)
+ π/ktot ≈ 3.4 μm
+ π/ktot ≈ 4.2 μm–40
+ c–20
+ 200
+ 0
+ x (μm)
+ 20
+ 40–40–20
+ 0
+ x (μm)
+ vS
+ 〈vS〉
+ vS (km s–1)–100
+ 100
+ 0–0.14–0.12–0.10
+ Δ–0.08
+ (meV)–0.06
+ Fig. 4 | Phase gradient (Bohmian) velocity vS
+ . a, To measure the phase 
+gradient of quantum states in the step potential, we incorporate a Mach–Zehnder 
+interferometer into our experimental setup. A Dove prism is placed in one  
+arm of the interferometer to create a mirrored image of the input state. The 
+wavenumber associated with the observed interference pattern at the camera, 
+ktot
+ = kMZI
+ + kS
+ , has two contributions: a component related to the alignment  
+of the interferometer, kMZI
+ , which can be determined in an independent 
+measurement, and a component associated with the intrinsic phase gradient  
+of the quantum state kS
+ . b, The top row shows sketches of wave functions and 
+their mirror images, ψ and ψM
+ , interfering at the output of the interferometer  
+in the classically allowed (left) and forbidden (right) regimes, respectively.  
+The middle row displays images of experimentally obtained interference 
+patterns. The bottom row shows the corresponding line-integrated densities. 
+From the periodicity of the obtained interference patterns, we extract ktot
+ .  
+This is then converted to the velocity v ħk m ħk k m
+ = / = ( − )/
+ S S tot MZI . For the two 
+shown cases, we obtain vS
+ ≈ 2,400 km s−1 for Δ ≈ 0.1 meV and vS
+ ≈ (31 ± 42) km s−1 
+for Δ ≈ −0.08 meV. c Blue markers indicate the velocity vS
+ in the classically 
+forbidden regime, derived using the procedure described above. The green 
+dashed line shows the average value, ⟨vS
+ ⟩ = (59 ± 42) km s−1, of all measurements 
+with Δ ≤ −0.05 meV. Error bars indicate the standard error of the mean.
+ the scattering process. Thus, the wave picture based on the Schrödinger 
+equation and the particle picture based on the guiding equation offer 
+inconsistent accounts of the significance of losses in the scattering 
+process, within the Bohmian interpretation of our experiment. Even 
+independently of the speed measurements presented in this work, this 
+discrepancy casts doubt on whether the guiding equation accurately 
+captures the temporal dynamics of the scattering process.
+ In this work, we have measured an energy–speed relationship for 
+tunnelling particles based on the analysis of two orthogonal motions in 
+a system of two coupled waveguides: translational motion along the 
+tatively, we see agreement with an energy–speed relation 
+= 2 / . 
+For Δ < 0, this implies that particles move faster the less kinetic energy 
+v Δm
+ |M|
+ 20–0.04
+ x
+ 40
+ Max
+ Min
+ they have, that is, the more negative their local kinetic energy becomes. 
+If the speed v is translated into the time τλ
+ = λ/v, for E < V0
+ and the decay 
+length λ, this accurately reproduces the experimentally observed dwell 
+time of the particles over a wide energy range. If v is translated into  
+the time τb
+ = b/v, for E < V0
+ and the barrier width b, the result is the tun
+nelling time proposed by Büttiker and Landauer12,13,40. These straight
+forward applications of the measured energy–speed relation to 
+evanescent phenomena suggest that this relation plays a fundamental 
+part in quantum tunnelling. More broadly, our work indicates that, in 
+addition to phase gradients, amplitude decays in quantum mechanical 
+wave functions serve as indicators of motion, following a de Broglie 
+relation λ ħmv
+ = / , where λ is the decay length  and v denotes the nondi
+rectional particle speed measured in this work. This contrasts with 
+Bohmian mechanics, which considers phase gradients as the sole  
+indicators of motion.
+ Online content
+ Any methods, additional references, Nature Portfolio reporting summa
+ries, source data, extended data, supplementary information, acknowl
+edgements, peer review information; details of author contributions 
+and competing interests; and statements of data and code availability 
+are available at https://doi.org/10.1038/s41586-025-09099-4.
+ 1. 
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+Aharonov, Y., Popescu, S., Rohrlich, D. & Vaidman, L. Measurement of the negative kinetic 
+energy of tunneling particles. In Proc. 4th Int. Symp. Foundations of Quantum Mechanics 
+(eds Tsukada, M. et al.) JJAP Series 9, 251–253 (JJAP, 1993).
+ Hauge, E. H. & Støvneng, J. A. Tunneling times: a critical review. J. Rev. Mod. Phys. 61,  
+917–936 (1989).
+ Landauer, R. & Martin, T. Barrier interaction time in tunnelling. Rev. Mod. Phys. 66, 217–228 
+(1994).
+ Winful, H. G. Tunneling time, the Hartman effect, and superluminality: a proposed 
+resolution of an old paradox. Phys. Rep. 436, 1–69 (2006).
+ Sainadh, U. S., Sang, R. T. & Litvinyuk, I. V. Attoclock and the quest for tunnelling time in 
+strong-field physics. J. Phys. Photon. 2, 042002 (2020).
+ Field, G. E. On the status of quantum tunnelling time. Eur. J. Philos. Sci. 12, 57 (2022).
+ Bohm, D. A suggested interpretation of the quantum theory in terms of “hidden” 
+variables. Phys. Rev. 85, 166–179 (1952).
+ Kocsis, S. et al. Observing the average trajectories of single photons in a two-slit 
+interferometer. Science 332, 1170–1173 (2011).
+ Mahler, D. H. et al. Experimental nonlocal and surreal Bohmian trajectories. Sci. Adv. 2, 
+e1501466 (2016).
+ 10. Baz, A. Lifetime of intermediate states. Yad. Fiz. 4, 252 (1966).
+ 11. 
+Rybachenko, V. Time of particle penetrating through barrier. Yad. Fiz. 5, 895 (1967).
+ 12. 
+Büttiker, M. & Landauer, R. Traversal time for tunneling. Phys. Rev. Lett. 49, 1739–1742 
+(1982).
+ 13. Büttiker, M. Larmor precession and the traversal time for tunneling. Phys. Rev. B 27,  
+6178–6188 (1983).
+ 14. Pollak, E. & Miller, W. H. New physical interpretation for time in scattering theory.  
+Phys. Rev. Lett. 53, 115–118 (1984).
+ 15. Jayannavar, A. M. A note on traversal time for tunneling. Pramana 29, 341–344 (1987).
+ 16. Leavens, C. R. Transmission, reflection and dwell times within Bohm’s causal 
+interpretation of quantum mechanics. Solid State Commun. 74, 923–928 (1990).
+ 17. 
+Spiller, T. P., Clark, T. D., Prance, R. J. & Prance, H. Barrier traversal time in the quantum 
+potential picture. Europhys. Lett. 12, 1–4 (1990).
+ 18. Yamada, N. Unified derivation of tunneling times from decoherence functionals.  
+Phys. Rev. Lett. 93, 170401 (2004).
+ 19. Ranfagni, A., Mugnai, D., Fabeni, P. & Pazzi, G. P. Delay‐time measurements in narrowed 
+waveguides as a test of tunneling. Appl. Phys. Lett. 58, 774–776 (1991).
+ 20. Enders, A. & Nimtz, G. On superluminal barrier traversal. J. Phys. I France 2, 1693–1698 (1992).
+ 21. 
+Steinberg, A. M., Kwiat, P. G. & Chiao, R. Y. Measurement of the single-photon tunneling 
+time. Phys. Rev. Lett. 71, 708–711 (1993).
+ 22. Spielmann, C., Szipöcs, R., Stingl, A. & Krausz, F. Tunneling of optical pulses through 
+photonic band gaps. Phys. Rev. Lett. 73, 2308–2311 (1994).
+ 23. Deutsch, M. & Golub, Optical Larmor clock: measurement of the photonic tunneling time. 
+J. Phys. Rev. A 53, 434–439 (1996).
+ 24. Balcou, P. & Dutriaux, L. Dual optical tunneling times in frustrated total internal reflection. 
+Phys. Rev. Lett. 78, 851–854 (1997).
+ 25. Hino, M. et al. Measurement of Larmor precession angles of tunneling neutrons.  
+Phys. Rev. A 59, 2261–2268 (1999).
+ 26. Ramos, R., Spierings, D., Racicot, I. & Steinberg, A. M. Measurement of the time spent by a 
+tunnelling atom within the barrier region. Nature 583, 529–532 (2020).
+ 27. Spierings, D. C. & Steinberg, A. M. Observation of the decrease of Larmor tunneling times 
+with lower incident energy. Phys. Rev. Lett. 127, 133001 (2021).
+ Nature | Vol 643 | 3 July 2025 | 71
+Article
+ 28. Bell, J. S. On the impossible pilot wave. Found. Phys. 12, 989–999 (1982).
+ 29. Dürr, D., Goldstein, S. & Zanghi, N. Quantum equilibrium and the origin of absolute 
+uncertainty. J. Stat. Phys. 67, 843–907 (1992).
+ 30. Holland, P. R. The Quantum Theory of Motion: An Account of the de Broglie–Bohm Causal 
+Interpretation of Quantum Mechanics (Cambridge Univ. Press, 1995).
+ 31. Das, S. & Dürr, D. Arrival time distributions of spin-1/2 particles. Sci. Rep. 9, 2242 (2019).
+ 32. Drezet, A. Arrival time and Bohmian mechanics: it is the theory which decides what we 
+can measure. Symmetry 16, 1325 (2024).
+ 33. Goldstein, S., Tumulka, R. & Zanghi, N. On the spin dependence of detection times and 
+the nonmeasurability of arrival times. Sci. Rep. 14, 3775 (2024).
+ 34. Goldstein, S., Tumulka, R. & Zanghi, N. Arrival times versus detection times. Found. Phys. 
+54, 63 (2024).
+ 35. Klaers, J., Sharoglazova, V. & Toebes, C. Particle motion associated with wave-function 
+density gradients. Phys. Rev. A 107, 052201 (2023).
+ 36. Klaers, J., Schmitt, J., Vewinger, F. & Weitz, M. Bose–Einstein condensation of photons in 
+an optical microcavity. Nature 468, 545–548 (2010).
+ 37. Klaers, J., Vewinger, F. & Weitz, M. Thermalization of a two-dimensional photonic gas in  
+a ‘white wall’ photon box. Nature Phys. 6, 512–515 (2010).
+ 38. Vretenar, M., Toebes, C. & Klaers, J. Modified Bose-Einstein condensation in an optical 
+quantum gas. Nat. Commun. 12, 5749 (2021).
+ 39. Vretenar, M., Kassenberg, B., Bissesar, S., Toebes, C. & Klaers, J. Controllable Josephson 
+junction for photon Bose-Einstein condensates. Phys. Rev. Res. 3, 023167 (2021).
+ 40. Jonson, M. The dynamical image potential for tunneling electrons. Solid State Commun. 
+33, 743–746 (1980).
+ Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+ Open Access This article is licensed under a Creative Commons Attribution 
+4.0 International License, which permits use, sharing, adaptation, distribution 
+and reproduction in any medium or format, as long as you give appropriate 
+credit to the original author(s) and the source, provide a link to the Creative Commons licence, 
+and indicate if changes were made. The images or other third party material in this article are 
+included in the article’s Creative Commons licence, unless indicated otherwise in a credit line 
+to the material. If material is not included in the article’s Creative Commons licence and your 
+intended use is not permitted by statutory regulation or exceeds the permitted use, you will 
+need to obtain permission directly from the copyright holder. To view a copy of this licence, 
+visit http://creativecommons.org/licenses/by/4.0/.
+ © The Author(s) 2025
+ 72 | Nature | Vol 643 | 3 July 2025
+Methods
+ Experimental setup
+ Our experiments are performed in a high-finesse optical microcavity 
+consisting of two dielectric mirrors. We use Rhodamine 101 dissolved 
+in ethylene glycol as an active optical medium at a concentration of 
+1 mmol l−1. One of the mirrors is fixed, whereas the other is connected 
+to three piezo-electrical actuators, enabling precise adjustments to 
+the cavity length and tilt. The mirror separation is set approximately 
+to D0
+ = 15 μm. Both the mirror separation and the angular orientation 
+of the two mirrors are stabilized during the experiment. For the mirror 
+separation, we measure the wavelength of the emitted light and provide 
+electrical feedback to the piezos to stabilize the desired cavity length. 
+For the angular alignment, a new technique based on the inverse solu
+tion of the Schrödinger equation was developed41. We use non-resonant 
+pumping at a wavelength of 532 nm to create regions of high chemical 
+potential, in which photons condense36,37 and form coherent states 
+of light at a wavelength of about 650 nm. The laser pulse duration is 
+around 26 ns (FWHM) at a pulse repetition rate of 500 Hz. A spatial light 
+modulator is used to move the pumping spot in the plane of the cavity, 
+allowing different particle energies to be probed. We use a band-pass 
+filter with a central wavelength of 650 nm and a width of 10 nm (FWHM) 
+before the cameras to isolate the signal from the background. We fur
+thermore use a D-mirror to split the light emitted from the cavity and 
+to image different spatial regions of the signal onto different cameras. 
+This approach allows us to isolate high signals in the waveguide before 
+the potential step at x = 0 from (potentially) low signals in the coupled 
+waveguide region.
+ Sample preparation
+ We apply a new nano-structuring method42 to create waveguiding 
+potentials for the photons in the transverse plane of the resonator. 
+The main waveguide (Fig. 1b) begins with a linear ramp, allowing us to 
+vary the initial potential energy of the photons by changing the point 
+along the ramp at which we optically pump the system. The potential 
+energy of the photons is then converted into kinetic energy as the pho
+tons move downward and reach a region of constant potential. The 
+photons encounter the step potential in which a second waveguide 
+opens up. The coupled waveguide potentials are designed to gradually 
+diminish at large distances to minimize back reflections from the end. 
+The height map of the mirror surface (Fig. 1b) is determined through 
+Mirau interferometry.
+ Measurement scheme for determining particle speeds
+ For a formal justification of the experimental method, we model 
+the coupled waveguide system using the following set of steady- 
+state Schrödinger equations (valid in a quasi-continuous-wave  
+configuration):
+ Eψ ħ
+ m
+ ψ
+ x Vψ ħJ ψ ψ =−2
+ d
+ d + + ( − ), (2) m
+ 2
+ m
+ 2 0 m 0 a m
+ Eψ ħ
+ m
+ ψ
+ x Vψ ħJ ψ ψ =−2
+ d
+ d + + ( − ), (3) a
+ 2
+ a
+ 2 0 a 0 m a
+ where ψm
+ represents the wave functions in the main waveguide, ψa
+ 
+represents the wave functions in the auxiliary waveguide, E is the 
+total energy, V0
+ is the potential energy and J0
+ is the coupling constant 
+between the waveguides. An ansatz for the solution of these equations 
+can be written as
+ ψ kx ∝cos( )e , (4) kx
+ m 1
+ i 2
+ ψ kx ∝sin( )e . (5) kx
+ a 1
+ i 2
+ This ansatz describes the motion of particles as plane waves, 
+exp(ik2
+ x), which, in case where E < V0
+ , transitions into an evanescent 
+solution. The relative population of the waveguides is determined by 
+the population transfer factors cos(k1
+ x) and sin(k1
+ x). Using the ansatz 
+provided above, the increase in population in the auxiliary waveguide 
+can be shown to follow
+ ρ x ψ
+ ψ ψ k x ( )= | |
+ | | +| | ≈| | , (6) a
+ a
+ 2
+ m
+ 2
+ a
+ 2 1
+ 2 2
+ for small x. Thus, a parabolic increase in the relative population in the 
+auxiliary waveguide is expected, regardless of the type of motion. The 
+coefficient |k1
+ |2 is experimentally accessible. By applying the ansatz, 
+equations (4) and (5), to the coupled Schrödinger equations, we find 
+that k1
+ and k2
+ satisfy the relation
+ k mJ
+ ħk = . (7) 1
+ 0
+ 2
+ This relation holds irrespective of whether the solution describes a 
+propagating or evanescent state. It forms the basis of our measurement 
+scheme, as it connects the motional state (k2
+ ) with the relative popula
+tion in the waveguides (k1
+ ), our measurement quantity. To justify the 
+method, it is not strictly necessary to use the full information provided 
+by equation (7). The key point of interest is that k1
+ is proportional to J0
+ 
+(given that k2
+ is independent of J0
+ , which holds true for E V ħJ | − | 0 0
+ ≫ ; 
+ref. 35). This relationship is, in principle, already evident from the cou
+pling between two localized states, as discussed in this study. As J0
+ is a 
+property of our measurement device and not of the state of motion, 
+we factor it out as a pre-factor, |k1
+ |2 = (J0
+ /v)2, resulting in
+ ρ x k x J
+ v x ( )≈| | = . (8) a 1
+ 2 2 0
+ 2
+ 2 
+  
+ 
+  
+ The remaining factor v has the dimensions of a velocity and an 
+undetermined sign. Most importantly, this quantity determines the 
+spatial length scale of the population build-up in the coupled wave
+guide system—an effect that genuinely represents a spatio-temporal 
+phenomenon, distributing particles in space (x) relative to a temporal 
+reference (J0
+ ). We regard this as a property that can be attributed only to  
+a form of motion. It is important to emphasize that this measurement 
+scheme does not determine a sign of v. A sign implies directionality, 
+indicating net particle transport. Any measurement scheme sensitive 
+to direction must necessarily yield a velocity of zero for an evanescent 
+state of the form exp(−x/λ), as these states do not imply net particle 
+transport. Conversely, any scheme that assigns a non-zero speed value 
+to a state of this form, which is true for the scheme presented above, 
+must be insensitive to direction.
+ Statistical error analysis
+ All errors shown in the figures represent standard errors of the mean. 
+For Fig. 3, these were obtained by averaging 156 independent meas
+urements performed over several days. For Fig. 4, we average over 
+19 measurements. No dataset was excluded. Apart from statistical 
+errors, we expect systematic errors mainly from two sources. This will 
+be discussed below.
+ Determination of the energy E of the incident particles
+ The (kinetic) energy E of the incoming particles is obtained by analys
+ing the standing wave pattern resulting from the superposition of the 
+incident particle stream with the particle stream reflected from the 
+potential step. First, the observed intensity pattern is transformed to 
+Fourier space. Then, the dominant spatial frequency kmax
+ is extracted. 
+This corresponds to a wavenumber of the particles of k0
+ = kmax
+ /2. The 
+additional factor of 2 arises because the Fourier analysis is based on 
+Article
+ intensity patterns rather than the complex amplitude of the inci
+dent wave. With this, the energy of the incident particles follows as 
+E ħk m =( ) /2 0
+ 2 .
+ Determination of the coupling constant J0
+ For determining J0
+ , we use the relation J ħkk m = / 0 1 2 (ref. 35). This  
+relation applies to classically allowed motion in the coupled waveguide 
+system (and remains valid in the classically forbidden regime). The 
+wavenumber k1
+ represents the spatial periodicity of the population 
+transfer between the main and auxiliary waveguides. This is derived 
+by fitting the relative population of the waveguides with harmonic 
+functions, for example, ρa
+ = sin2(k1
+ x). The wavenumber k2
+ descri
+bes the motion of the particles within a waveguide of the coupled 
+waveguide system. It is determined similarly to k0
+ by analysing a stand
+ing wave pattern created by a small residual back reflection from  
+the open end of the coupled waveguide system. In this way, we obtain 
+J0
+ = 2π(6.34 ± 0.01) GHz for the coupling constant when averaging over 
+all 156 measurements.
+ Determination of the decay constant κ
+ For Δ < 0, we derive a position-dependent decay constant in the  
+main waveguide using ∣ ∣ κx ψ x x ( )=(−1/2)×d[ln( ( ) )]/d m
+ 2 . The decay 
+constant κ is considered to be the maximum value encountered in  
+κ(x), which in all observed cases is located close to the potential step.
+ Determination of the step height V0
+ For determining V0
+ , we use the relation V E ħk m ħJ = −( ) /2 + 0 2
+ 2
+ 0
+ , which 
+is valid asymptotically in both the classically allowed and classi
+cally forbidden regimes35. In the classically allowed regime, the wave
+number k2
+ describes the phase gradient of the quantum state within 
+a waveguide of the coupled waveguide system. In the classically  
+forbidden regime, k2
+ becomes imaginary and describes the decay of 
+the quantum state, k2
+ = iκ. Consequently, ħk m ( ) /2 2
+ 2 becomes nega
+tive. To a good approximation, both regimes yield agreeing values  
+for V0
+ . When averaging over all 156 measurements, we obtain 
+V0
+ = (0.538 ± 0.003) meV.
+ Determination of the speed v and its expected systematic errors
+ The particle speed given in Fig. 3a is obtained by fitting the measured 
+relative population in the auxiliary waveguide, ρa
+ (x), to the model 
+f x J x x v ( )=[ ( − )/ ′] 0 0
+ 2. The fitting procedure aims to find the value for  
+v′ that minimizes the error ∫ Rv xρx f x ( ′)= d [ ( )− ( )] x
+ x
+ a
+ 2
+ 0
+ max . As the coupl
+ing constant J0
+ can be independently determined, the fitting proce
+dure depends on two input parameters: x0
+ and xmax
+ , which are the lower  
+and upper bounds of the error integral, respectively. These parameters 
+are considered the main sources of systematic errors in our data eval
+uation. Ideally, x0
+ is simply defined by the position of the potential step; 
+however, owing to the limitations of the nano-structuring method used 
+for sample preparation, which has a minimal structure size of approx
+imately 4 μm (FWHM of a point-like structure)42, the potential step is 
+not perfectly sharp. In our data analysis, we treat x0
+ as a global param
+eter set identically across all measurements. Its uncertainty is assumed 
+to be 2 μm. Varying x0
+ by this amount systematically shifts the obtained 
+speed values by an average of 8.5% compared with the results presented 
+in Fig. 3a. The second parameter, xmax
+ , determines the extent of data 
+considered in the fitting procedure. Generally, using more data will 
+enhance the reliability of the speed determination. By contrast, if xmax
+ 
+is set too high, the accuracy of the parabolic approximation f(x) 
+decreases, introducing systematic errors. This systematic error can 
+be estimated as follows. First, we consider the case of classically allowed 
+motion in which the experimentally obtained data are expected to  
+be of the form ρ x J xv ηx ( )=sin( / )+ ( ) a
+ 2
+ 0
+ . Here, η(x) is additive noise 
+with an expectation value of zero, ⟨η(x)⟩ = 0. For an individual mea
+surement outcome, the optimal value for v′ can be determined by  
+solving Rv v d ( ′)/d ′=0 for v′. This condition can be expressed as 
+∫ x f v f ρ d 2(d /d ′)( − )=0 x
+ x
+ a 0
+ max . Averaging over many realizations, ρa
+ is 
+replaced by ρ J xv =sin( / ) a
+ 2
+ 0
+ due to the assumed properties of  
+the noise. The (average) optimal value for v′ is then obtained from  
+the equation ∫ x J x v J xv J xv d 2(−2 / ′ )[( / ′) −sin( / )]=0 x
+ x
+ 0
+ 2 3
+ 0
+ 2 2
+ 0 0
+ max . Solv
+ing this equation analytically yields a cumbersome expression  
+for v′, which we will not reproduce here. For this work, it is suffi
+cient to approximate the solution by a series expansion, giving 
+v v ε ε ′/ −1=(5/42) +(1543/31752) 2. Here, ε is the maximum relative 
+population considered in the fitting procedure, which is related to xmax
+ 
+by x v J ε =( / )arcsin max 0
+ . In our analysis of the data in the classically 
+allowed regime, we choose ε = 0.25, which yields v′/v − 1 = 0.033. This 
+indicates that using data up to a relative population of 25% in the aux
+iliary waveguide introduces a systematic error in the extracted speeds 
+of approximately 3% because of the parabolic approximation. This is 
+comparable to the statistical uncertainties in our measurements.  
+A similar calculation can be performed in the classically forbidden 
+regime, in which we assume the experimentally obtained data to be  
+of the form ρ x J xv J xv J xv ηx ( )=sinh( / )/[sinh( / )+cosh( / )]+ ( ) a
+ 2
+ 0
+ 2
+ 0
+ 2
+ 0
+ .  
+The result of this calculation is v′/v − 1 = (25/42)ε + (24463/31752)ε2. 
+Thus, for the same value of ε, the systematic deviation for v′ due to the 
+parabolic approximation turns out to be five times larger in the classi
+cally forbidden regime than in the classically allowed regime. This 
+needs to be considered when choosing an appropriate value for ε. 
+Furthermore, it must be considered that data up to a specific relative 
+population are not necessarily available for all energies Δ. In the clas
+sically forbidden regime, the point at which a certain population level 
+is reached progressively moves deeper into the step potential as Δ 
+becomes smaller and the particle speed increases. Moreover, the decay 
+constant increases, causing the signal to decay more rapidly. This can 
+prevent observing specific population levels due to noise. Therefore, 
+in our data analysis, we adjust ε as we move deeper into the classically 
+forbidden region. More specifically, we choose ε = 0.1 for 
+−0.2 meV < Δ < 0 and ε = 0.05 for Δ < −0.2 meV. The expected systematic 
+deviations for the determined speed due to the parabolic approxima
+tion are 6.7% and 3.2%, respectively.
+ Determination of the velocity vS
+ We perform interferometric measurements in which we interfere the 
+wave function with a spatially mirrored image of itself to detect phase 
+gradients. For this purpose, we use a Mach–Zehnder interferometer, 
+equipped with a Dove prism in one of the arms to mirror the image in 
+one direction. The determination of the total wavevector, ktot
+ , which 
+describes the overall periodicity of the observed interference pattern, 
+is performed like the one described above, namely, by analysing the 
+Fourier spectrum of the images. Crucially, the observed interference 
+patterns—and thus the wavevector ktot
+ —depend not only on the intrin
+sic phase gradients of the examined wave functions but also on the 
+alignment of the interferometer. To determine the contribution of the 
+interferometer, we investigate reference modes created in additional 
+surface structures independent from the coupled waveguide system. 
+These reference modes are designed to have a constant intrinsic phase. 
+Their analysis yields the wavevector contribution due to the alignment 
+of the interferometer, denoted as kMZI
+ . This contribution is subtracted 
+from ktot
+ to determine the intrinsic phase gradients of the wave func
+tions and the associated velocityv ħk k m = ( − )/ S tot MZI .
