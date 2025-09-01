@@ -1,0 +1,26 @@
+name: Review request
+description: Ask for a review of one or more Repo 13 files
+title: "Review: <short topic>"
+labels:
+  - review
+  - help wanted
+body:
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Which file(s) and sections should be reviewed?
+      placeholder: e.g., New Text Document (118).txt, sections on K2-18 b and public engagement
+  - type: textarea
+    id: questions
+    attributes:
+      label: Specific questions
+      description: What should reviewers look for or challenge?
+      placeholder: e.g., frequency offsets, modulation interpretation, audit lines
+  - type: input
+    id: due
+    attributes:
+      label: Desired date
+      placeholder: YYYY-MM-DD
+    validations:
+      required: false
