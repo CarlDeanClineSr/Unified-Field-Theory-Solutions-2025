@@ -1,0 +1,21 @@
+- name: analysis
+  color: "0075ca"
+  description: "Analysis scripts and tools"
+- name: docs
+  color: "0075ca"
+  description: "Documentation changes"
+- name: infra
+  color: "e99695"
+  description: "Infrastructure and workflow changes"
+- name: meta
+  color: "d4c5f9"
+  description: "Meta files like README, CONTRIBUTING"
+- name: triage
+  color: "fbca04"
+  description: "Needs triage and review"
+- name: review
+  color: "d93f0b"
+  description: "Review request"
+- name: relay
+  color: "7057ff"
+  description: "Relay to next issue"

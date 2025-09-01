@@ -1,0 +1,58 @@
+name: Relay to Next
+
+on:
+  issues:
+    types: [closed]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, 'relay')
+    steps:
+      - name: Create follow-up issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { issue } = context.payload;
+            
+            // Extract issue content for context
+            const originalTitle = issue.title;
+            const originalNumber = issue.number;
+            const originalBody = issue.body || '';
+            
+            // Create follow-up issue
+            const followUpTitle = `[RELAY] Follow-up from #${originalNumber}: ${originalTitle}`;
+            const followUpBody = `
+            ## 🔄 Relay from #${originalNumber}
+            
+            This issue is a follow-up from the completed relay issue: #${originalNumber}
+            
+            **Original Title:** ${originalTitle}
+            
+            **Previous Context:**
+            ${originalBody.substring(0, 500)}${originalBody.length > 500 ? '...' : ''}
+            
+            ---
+            
+            **Next Steps:**
+            - [ ] Review the completed work from #${originalNumber}
+            - [ ] Continue with next phase of development
+            - [ ] Update any relevant documentation
+            
+            **Instructions for next contributor:**
+            Please review the previous issue and continue the work as needed. Add specific next steps and requirements as appropriate.
+            `;
+            
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: followUpTitle,
+              body: followUpBody,
+              labels: ['relay', 'triage']
+            });
+            
+            console.log(`Created follow-up issue for #${originalNumber}`);

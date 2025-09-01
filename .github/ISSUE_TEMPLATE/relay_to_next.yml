@@ -1,0 +1,56 @@
+name: relay_to_next
+description: Relay task to next contributor
+title: "[RELAY] Follow-up from #{{ issue_number }}"
+labels: ["relay"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This issue is a relay follow-up. Use this template when you need to pass a task to the next contributor or continue work that builds on a previous issue.
+        
+  - type: input
+    id: previous_issue
+    attributes:
+      label: Previous Issue
+      description: Link to the issue this follows from
+      placeholder: "#123"
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What was accomplished in the previous issue?
+      placeholder: Briefly describe what was done...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: Next Steps
+      description: What needs to be done next?
+      placeholder: Describe the next actions needed...
+    validations:
+      required: true
+      
+  - type: textarea
+    id: resources
+    attributes:
+      label: Resources & Links
+      description: Any relevant files, documentation, or resources for the next contributor
+      placeholder: Links to files, documentation, etc.
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this follow-up work?
+      options:
+        - Low
+        - Medium
+        - High
+        - Critical
+    validations:
+      required: true

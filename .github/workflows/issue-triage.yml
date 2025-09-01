@@ -1,0 +1,32 @@
+name: Issue Triage
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add triage label
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { issue } = context.payload;
+            const labels = ['triage'];
+            
+            // Add 'review' label if title starts with "Review:"
+            if (issue.title.toLowerCase().startsWith('review:')) {
+              labels.push('review');
+            }
+            
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: labels
+            });

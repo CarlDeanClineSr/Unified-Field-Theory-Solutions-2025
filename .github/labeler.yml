@@ -1,0 +1,13 @@
+analysis:
+  - "scripts/**/*.py"
+  - "requirements.txt"
+docs:
+  - "**/*.md"
+  - "docs/**"
+infra:
+  - ".github/**"
+  - "CODEOWNERS"
+  - ".gitignore"
+meta:
+  - "README.md"
+  - "CONTRIBUTING.md"
