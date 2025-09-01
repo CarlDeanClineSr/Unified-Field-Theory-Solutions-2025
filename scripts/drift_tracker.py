@@ -39,21 +39,31 @@ def load_data(path: str, sample_rate: Optional[float]) -> Tuple[np.ndarray, floa
         return data, float(fs)
     else:
         arr = np.loadtxt(path)
-        arr = np.atleast_2d(arr)
-        if arr.shape[1] == 1:
+        if arr.ndim == 1:
+            # Single column data
             if sample_rate is None:
                 raise ValueError("For single-column TXT, --sample-rate is required (Hz).")
-            return arr[:, 0].astype(np.float64), float(sample_rate)
-        elif arr.shape[1] >= 2:
-            t = arr[:, 0].astype(np.float64)
-            x = arr[:, 1].astype(np.float64)
-            dt = np.median(np.diff(t))
-            if dt <= 0:
-                raise ValueError("Non-increasing time column; cannot infer sample rate.")
-            fs = 1.0 / dt
-            return x, float(fs)
+            return arr.astype(np.float64), float(sample_rate)
         else:
-            raise ValueError("Unrecognized TXT format.")
+            arr = np.atleast_2d(arr)
+            if arr.shape[1] == 1:
+                if sample_rate is None:
+                    raise ValueError("For single-column TXT, --sample-rate is required (Hz).")
+                return arr[:, 0].astype(np.float64), float(sample_rate)
+            elif arr.shape[1] >= 2:
+                t = arr[:, 0].astype(np.float64)
+                x = arr[:, 1].astype(np.float64)
+                dt_vals = np.diff(t)
+                dt_vals = dt_vals[dt_vals > 0]  # Remove any non-positive differences
+                if len(dt_vals) == 0:
+                    raise ValueError("Non-increasing time column; cannot infer sample rate.")
+                dt = np.median(dt_vals)
+                if dt <= 0:
+                    raise ValueError("Non-increasing time column; cannot infer sample rate.")
+                fs = 1.0 / dt
+                return x, float(fs)
+            else:
+                raise ValueError("Unrecognized TXT format.")
 
 
 def sliding_peak_drift(x: np.ndarray, fs: float, target: float, band: float,
