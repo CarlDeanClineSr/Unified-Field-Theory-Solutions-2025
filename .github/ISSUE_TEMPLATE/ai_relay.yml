@@ -1,0 +1,18 @@
+name: AI Relay Capsule
+description: Create a new relay capsule issue to pass analysis to the next step
+title: "Relay: <short topic>"
+labels:
+  - relay
+  - documentation
+body:
+  - type: textarea
+    id: capsule
+    attributes:
+      label: Capsule summary
+      description: What did this capsule analyze and conclude?
+      placeholder: Datasets, peaks, drift, phase, and next ask
+  - type: input
+    id: next
+    attributes:
+      label: Next target or person
+      placeholder: e.g., Ask GBT for observing slot; or @reviewer

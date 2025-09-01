@@ -1,0 +1,33 @@
+name: Relay capsule -> issue
+on:
+  push:
+    paths:
+      - 'docs/capsules/**.md'
+permissions:
+  contents: read
+  issues: write
+jobs:
+  relay:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open relay issue for each changed capsule
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const commits = context.payload.commits || [];
+            const files = [];
+            for (const c of commits) {
+              for (const f of (c.added||[]).concat(c.modified||[])) {
+                if (f.startsWith('docs/capsules/') && f.endsWith('.md')) files.push(f);
+              }
+            }
+            for (const path of files) {
+              const content = require('fs').readFileSync(path, 'utf8');
+              const m = content.match(/Capsule ID\s*:\s*(.+)/i);
+              const cid = m ? m[1].trim() : path.split('/').pop();
+              const title = `Relay: Capsule ${cid}`;
+              await github.rest.issues.create({ owner, repo, title, labels: ['relay','documentation'], body: `New capsule committed: ${path}\n\n---\n${content.substring(0, 800)}\n\n...` });
+            }

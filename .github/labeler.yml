@@ -1,0 +1,14 @@
+analysis:
+  - "scripts/**"
+  - "**/*.py"
+
+documentation:
+  - "docs/**"
+  - "**/*.md"
+
+infrastructure:
+  - ".github/**"
+
+research:
+  - "**/New Text Document *.txt"
+  - "**/New Text Document (*)*.txt"
