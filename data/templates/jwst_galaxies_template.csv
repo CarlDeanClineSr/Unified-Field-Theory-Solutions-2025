@@ -1,0 +1,4 @@
+id,z,logM_star,SFR,field,survey,source_url,notes
+# Example data rows (remove # to activate):
+# CEERS_1234,13.2,10.1,15.7,CEERS_field1,CEERS,mast.stsci.edu/CEERS_1234,unusually_massive_for_z
+# PRIMER_5678,12.8,9.8,8.3,PRIMER_field2,PRIMER,mast.stsci.edu/PRIMER_5678,compact_morphology
