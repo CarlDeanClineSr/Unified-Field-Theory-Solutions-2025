@@ -1,0 +1,4 @@
+run_id,event_id,E_in_GeV,p_in_GeV,E_out_pi_GeV,p_out_pi_GeV,passed_veto,classification,weight,source_url,notes
+2025-09-02_run-01,NA62-0001,75.0,74.6,15.2,15.0,true,signal,1.0,https://na62exp-public.example/event/0001,Within π+ energy window; clean veto
+2025-09-02_run-01,NA62-0002,75.0,74.6,14.8,14.6,true,background,1.0,https://na62exp-public.example/event/0002,Sideband-like; control sample
+2025-09-02_run-01,NA62-0003,75.0,74.6,15.0,14.9,false,uncertain,1.0,https://na62exp-public.example/event/0003,Veto fired; excluded from obs
