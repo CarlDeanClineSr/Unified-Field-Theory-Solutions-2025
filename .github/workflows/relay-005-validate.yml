@@ -1,0 +1,38 @@
+name: Relay 005 — validate CSV and audit harness
+
+on:
+  pull_request:
+    paths:
+      - "data/templates/na62_kaon_candidates_template.csv"
+      - "data/na62/**"
+      - "scripts/na62_audit_fit.py"
+      - "capsules/005/**"
+      - "relays/relay-005-na62_decay.md"
+  workflow_dispatch: {}
+  schedule:
+    - cron: "0 3 * * *"  # 03:00 UTC nightly smoke test
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install deps
+        run: pip install --disable-pip-version-check --no-input pandas
+      - name: Run audit harness (no commit, artifact only)
+        env:
+          NA62_BASELINE_BR: "1.06e-10"
+          NA62_BASELINE_SIGMA: "3.7e-11"
+        run: |
+          python scripts/na62_audit_fit.py --csv data/templates/na62_kaon_candidates_template.csv --out results || true
+          ls -la results || true
+      - name: Upload summary artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relay-005-summary
+          path: results/*.md
+          if-no-files-found: ignore
