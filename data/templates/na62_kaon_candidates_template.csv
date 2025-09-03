@@ -1,0 +1,4 @@
+event_id,run_id,momentum_gev,kaon_type,veto_status,weight,source_url
+1,2023001,15.2,positive,pass,1.0,https://na62.cern.ch/data/run1
+2,2023001,18.7,positive,fail,1.0,https://na62.cern.ch/data/run1
+3,2023002,12.4,positive,pass,0.9,https://na62.cern.ch/data/run2
