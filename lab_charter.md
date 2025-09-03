@@ -44,4 +44,4 @@ Glossary (living)
 - EM-Lattice: module family modeling electromagnetic coupling lattices.
 - Relay 005: current validation relay and audit harness iteration.
 
-Last updated: <fill on PR>
+Last updated: September 3, 2025
