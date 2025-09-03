@@ -1,0 +1,6 @@
+event_id,run_id,momentum_x,momentum_y,momentum_z,energy,particle_type,weight,classification,veto_status,source_url
+1,12345,1.2,0.8,15.3,18.7,kaon,1.0,signal,pass,https://na62.web.cern.ch/data/run12345
+2,12345,-0.5,1.1,12.1,14.2,pion,0.8,background,pass,https://na62.web.cern.ch/data/run12345
+3,12346,2.1,-0.3,16.8,20.1,kaon,1.0,signal,pass,https://na62.web.cern.ch/data/run12346
+4,12346,0.7,1.5,13.9,16.3,pion,0.9,background,veto,https://na62.web.cern.ch/data/run12346
+5,12347,1.8,0.2,14.7,17.9,kaon,1.0,unknown,pass,https://na62.web.cern.ch/data/run12347
