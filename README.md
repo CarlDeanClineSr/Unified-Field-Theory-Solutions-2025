@@ -1,4 +1,7 @@
 # Unified-Field-Theory-Solutions-2025
+
+[![Relay 005 — validate CSV and audit harness](https://github.com/CarlDeanClineSr/Unified-Field-Theory-Solutions-2025/actions/workflows/relay-005-validate.yml/badge.svg?branch=main)](https://github.com/CarlDeanClineSr/Unified-Field-Theory-Solutions-2025/actions/workflows/relay-005-validate.yml?query=branch%3Amain)
+
 The real math needed to unify physics. Not some old idea from decades ago... NEW!
 
 ## Start here
